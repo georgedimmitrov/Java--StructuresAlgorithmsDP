@@ -1,9 +1,8 @@
 package Recursion;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.math.BigInteger;
+import java.util.Arrays;
 import java.util.Map;
 import java.util.TreeMap;
 
@@ -30,15 +29,20 @@ public class Recursion {
 
 
         // Fibonacci Memoized Demo
-        BufferedReader inKb = new BufferedReader(new InputStreamReader(System.in));
-        System.out.println("Enter a number: ");
-        int num = 0;
-        BigInteger fibNum = BigInteger.valueOf(0);
-        num = Integer.parseInt(inKb.readLine());
-        fibNum = fibonacciMemoized(num);
-        System.out.println("The memoized fibonacci value of " + num + "th element is: " + fibNum);
+//        BufferedReader inKb = new BufferedReader(new InputStreamReader(System.in));
+//        System.out.println("Enter a number: ");
+//        int num = 0;
+//        BigInteger fibNum = BigInteger.valueOf(0);
+//        num = Integer.parseInt(inKb.readLine());
+//        fibNum = fibonacciMemoized(num);
+//        System.out.println("The memoized fibonacci value of " + num + "th element is: " + fibNum);
 
+        String[][][] arrayName = {{
+                {"000"}, {"100"},
+                {"010"}, {"110"}
+        }};
 
+        System.out.println(Arrays.deepToString(arrayName));
 
 
     }
